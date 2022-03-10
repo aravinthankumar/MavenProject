@@ -16,13 +16,21 @@ public class GitSub extends BaseClass {
 	@FindBy(name="q")
 	private WebElement txtProductName;
 	
-	@FindBy(xpath="(//div[@class='_4rR01T'])")
-	private WebElement mobileDetails;
+	@FindBy(xpath="//div[text()='Price -- Low to High']")
+	private WebElement lowPrice;
+	
+	@FindBy(xpath="//div[text()='Price -- High to Low']")
+	private WebElement highPrice;
 	
 	
 
-	public WebElement getMobileDetails() {
-		return mobileDetails;
+	
+	public WebElement getHighPrice() {
+		return highPrice;
+	}
+
+	public WebElement getLowPrice() {
+		return lowPrice;
 	}
 
 	public WebElement getClkCancel() {
