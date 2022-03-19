@@ -29,13 +29,12 @@ import com.gargoylesoftware.htmlunit.javascript.background.JavaScriptExecutor;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass {
-	protected static final int j = 0;
+	//protected static final int j = 0;
 	public static WebDriver driver;
 	public static WebDriver chromeDriver() {
 		WebDriverManager.chromedriver().setup();
 		driver=new ChromeDriver();
-		return driver;
-		
+		return driver;	
 	}
 	public static void urlLounch(String url) {
 		driver.get(url);
